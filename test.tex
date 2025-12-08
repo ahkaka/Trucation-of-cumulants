@@ -1,0 +1,21 @@
+\documentclass{ctexart} % 中文友好
+\usepackage{amsmath, amsthm, amssymb, graphicx}
+\begin{document}
+你好，\LaTeX！这是 XeLaTeX 自测。我是泪花花。
+
+\section{最简单转换}
+\subsection{矩层级方程}
+$$\varPsi ^{\left( k \right)}\left( s,t \right) =s\frac{\partial}{\partial s}\ln F^{\left( k \right)}\left( s,t \right) =\sum_{m=1}^{\infty}{{\varkappa _m}^{\left( k \right)}\left( t \right) s^m},F^{\left( k \right)}\left( s,t \right) =\sum_{m=0}^{\infty}{{A_m}^{\left( k \right)}\left( t \right) \frac{s^m}{m!}},
+$$$$
+@\mathrm{GPT}-5\text{完成方程代入上述级数匹配}s^m\text{项系数}:
+$$
+$$\begin{aligned}
+	\dot{\varkappa}_{1}^{(k)}&=-A\varkappa _{1}^{(k)}-B\left( \varkappa _{2}^{(k)}+\left( {\varkappa _1}^{\left( k \right)} \right) ^2 \right) +C+D(\varkappa _{1}^{(j)}-\varkappa _{1}^{(k)}),\\
+	\dot{\varkappa}_{2}^{(k)}&=-2A\varkappa _{2}^{(k)}-B\left( 4\varkappa _{3}^{(k)}+4{\varkappa _1}^{\left( k \right)}{\varkappa _2}^{\left( k \right)} \right) +D\left( (\varkappa _{2}^{(j)}-\varkappa _{2}^{(k)})+\left( A_{1}^{(j)}-A_{1}^{(k)} \right) (\varkappa _{1}^{(j)}-\varkappa _{1}^{(k)}) \right) .\\
+\end{aligned}$$
+$$
+\text{其中}R\left( s,t \right) \equiv \frac{F^{\left( j \right)}\left( s,t \right)}{F^{\left( k \right)}\left( s,t \right)}=\sum_{n=0}^{\infty}{r_n\left( t \right) s^n}, \text{系数}r_n\text{由幂级数除法确定：}
+$$$$
+r_0=\frac{A_{0}^{(j)}}{A_{0}^{(k)}}=1, r_1=\frac{A_{1}^{(j)}}{A_{0}^{(k)}}-r_0\frac{A_{1}^{(k)}}{A_{0}^{(k)}}=A_{1}^{(j)}-A_{1}^{(k)},
+$$
+\end{document}
